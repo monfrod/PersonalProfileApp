@@ -21,8 +21,8 @@ class TabController: UITabBarController {
     }
     private func setupTabs(){
         let profileVC = createNav(title: "Profile", image: UIImage(systemName: "person"), vc: ProfileViewController(), selImage: UIImage(systemName: "person.fill"))
-        let hobbiesVC = createNav(title: "My projects", image: UIImage(systemName: "dumbbell"), vc: HobbiesViewController(), selImage: UIImage(systemName: "dumbbell.fill"))
-        let dreamsVC = createNav(title: "My dreams", image: UIImage(systemName: "trophy"), vc: DreamsViewController(), selImage: UIImage(systemName: "trophy.fill"))
+        let hobbiesVC = createNav(title: "My projects", image: UIImage(systemName: "laptopcomputer"), vc: ProjectViewController(), selImage: UIImage(systemName: "laptopcomputer"))
+        let dreamsVC = createNav(title: "My goals", image: UIImage(systemName: "trophy"), vc: UINavigationController(rootViewController: GoalsViewController()), selImage: UIImage(named: "trophy.fill"))
         self.setViewControllers([profileVC, hobbiesVC, dreamsVC], animated: true)
     }
     private func createNav(title: String, image: UIImage?, vc: UIViewController, selImage: UIImage?)-> UIViewController{

@@ -7,7 +7,7 @@
 import UIKit
 import SwiftUI
 
-class HobbiesViewController: UIViewController {
+class ProjectViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
